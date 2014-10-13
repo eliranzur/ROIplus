@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Dashboard I Admin Panel</title>
+	
+	<link rel="stylesheet" href="./css/layout.css" type="text/css" media="screen">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="./css/jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="./css/hideshow.js" type="text/javascript"></script>
+	<script src="./css/jquery.tablesorter.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./css/jquery.equalHeight.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() 
+    	{ 
+      	  $(".tablesorter").tablesorter(); 
+   	 } 
+	);
+	$(document).ready(function() {
+
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.tabs li").click(function() {
+
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+
+});
+    </script>
+    <script type="text/javascript">
+    $(function(){
+        $('.column').equalHeight();
+    });
+</script>
+
+</head>
+
+
+<body>
+
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title"><a href="./company_profile.html">Website Admin</a></h1>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="http://www.medialoot.com/">View Site</a></div>
+		</hgroup>
+	</header> <!-- end of header bar -->
+	
+	<section id="secondary_bar">
+		<div class="user">
+			<p>John Doe (<a href="./company_profile.html">3 Messages</a>)</p>
+			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
+		</div>
+		<div class="breadcrumbs_container">
+			<article class="breadcrumbs"><a href="./company_profile.html">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
+		</div>
+	</section><!-- end of secondary bar -->
+	
+	<aside id="sidebar" class="column" style="height: 1700px;">
+		<form class="quick_search">
+			<input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=&#39;&#39;};this._haschanged=true;">
+		</form>
+		<hr>
+		<h3>Campaign Setup <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_new_article"><a href="./campaigns.html">Campaign Setup</a></li>
+			<li class="icn_edit_article"><a href="./events_triggers.html">Events Triggers</a></li>
+			<li class="icn_categories"><a href="./publishers.html">Publishers</a></li>
+		</ul>
+		<h3>Users <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_profile"><a href="./company_profile.html">Company Profile</a></li>
+		</ul>
+		<h3>Reports And Notifications <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_new_article"><a href="./notifications.html">Notifications</a></li>
+			<li class="icn_edit_article"><a href="./reporting.html">Reports</a></li>
+		</ul>
+		<!--
+		<h3>Admin <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_settings"><a href="./index.html#">Options</a></li>
+			<li class="icn_security"><a href="./index.html#">Security</a></li>
+			<li class="icn_jump_back"><a href="./index.html#">Logout</a></li>
+		</ul> 
+		-->
+		
+		<footer>
+			<hr>
+			<p><strong>Copyright © 2011 Website Admin</strong></p>
+			<p>Theme by <a href="http://www.medialoot.com/">MediaLoot</a></p>
+		</footer>
+	</aside><!-- end of sidebar -->
+	
+	<section id="main" class="column" style="height: 1700px;">
+		
+		
+
+
+
+		
+		<!-- end of stats article -->
+		
+		
+<article class="module width_full">
+			<header><h3>Stats</h3></header>
+			<div class="module_content">
+  <div class="stats_table">
+	<table style="width:100%">
+  <tbody>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Install / Click (%)</th>
+      <th>Registration / Install (%)</th>
+      <th>7th day / Install (%)</th>
+      <th>1st Purchase / Install (%)</th>
+      <th>Purchase / Install (%)</th>
+      <th>Revenue / Cost (ROI %)</th>
+  	</tr>    
+    
+
+<tr>
+      <td align="center">ClicksMob</td>
+      <td align="center" style="color:red">34 / 2,891 (1.17%)</td>
+      <td align="center" style="color:#64FE2E">22 / 34 (64.70%)</td>
+      <td align="center" style="color:red">8 / 34 (23.52%)</td>
+      <td align="center" style="color:#64FE2E">5 / 34 (14.70%)</td>
+      <td align="center" style="color:#64FE2E">9 / 34 (26.47%)</td>
+      <td align="center" style="color:red">$133 / $119 (11.76%)</td>
+    </tr>
+
+<tr>
+      <td align="center">Fyber</td>
+      <td align="center" style="color:#64FE2E">34 / 2,891 (1.17%)</td>
+      <td align="center" style="color:red">22 / 34 (64.70%)</td>
+      <td align="center" style="color:#64FE2E">8 / 34 (23.52%)</td>
+      <td align="center" style="color:red">5 / 34 (14.70%)</td>
+      <td align="center" style="color:red">9 / 34 (26.47%)</td>
+      <td align="center" style="color:#64FE2E">$133 / $119 (11.76%)</td>
+    </tr><tr>
+      <td align="center">MobPartner</td>
+      <td align="center" style="color:#64FE2E">34 / 2,891 (1.17%)</td>
+      <td align="center" style="color:red">22 / 34 (64.70%)</td>
+      <td align="center" style="color:#64FE2E">8 / 34 (23.52%)</td>
+      <td align="center" style="color:red">5 / 34 (14.70%)</td>
+      <td align="center" style="color:#64FE2E">9 / 34 (26.47%)</td>
+      <td align="center" style="color:red">$133 / $119 (11.76%)</td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="clear"></div>
+<div style="margin-top:5%;">
+  <article class="stats_graph">
+					<img src="http://chart.apis.google.com/chart?chxr=0,0,3000&chxt=y&chs=520x140&cht=lc&chco=76A4FB,80C65A&chd=s:Tdjpsvyvttmiihgmnrst,OTbdcfhhggcTUTTUadfk&chls=2|2&chma=40,20,20,30" width="520" height="140" alt="" />
+				</article>
+  <article class="stats_overview">
+					<div class="overview_today">
+						<p class="overview_day">Today</p>
+						<p class="overview_count">1,876</p>
+						<p class="overview_type">Installs</p>
+						<p class="overview_count">2,103$</p>
+						<p class="overview_type">Profit</p>
+					</div>
+					<div class="overview_previous">
+<p class="overview_day">Publishers Rank(ROI)</p>
+<font style="floaf:right;">1. ClicksMob (30%)</font><div class="clear"></div>
+<font style="floaf:right;">2. IronSource(25%)</font><div class="clear"></div>
+<font style="floaf:right;">3. Fyber (20%)</font><div class="clear"></div>
+<font style="floaf:right;">4. MobPartner (15%)</font><div class="clear"></div>
+<font style="floaf:right;">5. Applift (10%)</font><div class="clear"></div>
+</div>
+				</article>
+</div>
+				
+				
+				
+				<div class="clear"></div>
+			</div>
+		</article>
+
+<article class="module width_full">
+	<header><h3>reporting</h3></header>
+	<div class="module_content">
+      
+  	<fieldset style="width:95%; float:left; margin-right: 3%;"> 
+		
+<h2 style="margin-left:1%;">Time Frame</h2>
+
+  		<div class="clear"></div><font style="float:left; margin-left:4%;">Time Frame</font>
+  		<font style="float:left; margin-left:17%;">From</font>
+  		<font style="float:left; margin-left:25%;">To</font>
+<font style="float:left; margin-left:25%;">Time Zone</font>
+		<div class="clear"></div>
+  		<input style="width:20%; margin-left:4%;" type="texr">
+		<input type="image" src="./images/Calendar.gif" title="Edit" style="margin-top:1%; margin-left:3%;">
+     	<input style="width:20%; margin-left:1%;" type="texr">
+  		<input type="image" src="./images/Calendar.gif" title="Edit" style="margin-top:1%; margin-left:3%;">
+     	<input style="width:20%; margin-left:1%;" type="texr"><select style="width:10%; margin-left:2%;">
+	<option>GMT 0</option>
+	<option>GMT +1</option>								
+</select>
+<div class="clear"></div><h2 style="margin-left:1%; margin-top:2%;">Filter</h2><font style="float:left; margin-left:4%;">Campaign Name:</font><select style="width:18%; margin-left:2%; float:left;">
+	<option>Campaign#1</option>
+	<option>Campaign#2</option>								
+</select><font style="float:left; margin-left:4%;">Country:</font>
+<select style="width:18%; margin-left:2%; float:left;">
+	<option>All</option>	
+  <option>US</option>
+	<option>Canada</option>	
+  	<option>UK</option>
+  	<option>Japan</option>
+</select>
+      <div class="clear"></div>
+<font style="float:left; margin-left:4%; margin-top:2%;">Publisher:</font>
+<select style="width:18%; margin-left:6%; float:left; margin-top:2%;">
+	<option>All</option>
+  <option>ClicksMob</option>
+	<option>IronSource</option>	
+  	<option>Publisher#1</option>
+  	<option>Publisher#2</option>
+</select>
+<font style="float:left; margin-left:5%; margin-top:2%;">Platform:</font>
+<select style="width:18%; margin-left:1%; float:left; margin-top:2%;">
+	<option>All</option>
+  <option>Android</option>
+	<option>IOS</option>	
+</select>
+<div class="clear"></div>
+<font style="float:left; margin-left:4%; margin-top:2%;">Sub Publisher:</font>
+<select style="width:18%; margin-left:4%; float:left; margin-top:2%;">
+	<option>All</option>
+  <option>Sub Publisher#1</option>
+	<option>Sub Publisher#2</option>	
+</select>
+<div class="clear"></div>
+<h2 style="margin-left:1%; margin-top:2%;">Summary By</h2>
+  <input type="radio" name="summary" value="country">By Country<input type="radio" value="platform" name="summary" style="margin-left:2%;">By Platform<input type="radio" value="date" name="summary" style="margin-left:2%;">By Date
+<button type="button" style="margin-right:2%; float:right; width:15%;
+	height:42px;
+	border-radius:5px/6px;
+	background-color:#1eb2d8;
+	font-size:18px;
+	color:#fff;">Search</button></fieldset>
+						
+	<div class="clear"></div>
+</div>
+
+			
+		</article>	
+  
+  
+	</section>
+
+
+
+
+</body></html>

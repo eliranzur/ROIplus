@@ -1,0 +1,110 @@
+Server is listening on port 3000
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Collection: campaigns Entity: 22A0C0
+Collection: profiles Entity: 22A0
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Collection: profiles Entity: 22A0
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Collection: profiles Entity: 22A0
+Error: Failed to lookup view "data" in views directory "/home/ec2-user/roi+/views"
+    at Function.app.render (/home/ec2-user/roi+/node_modules/express/lib/application.js:516:17)
+    at ServerResponse.res.render (/home/ec2-user/roi+/node_modules/express/lib/response.js:900:7)
+    at /home/ec2-user/roi+/index.js:71:20
+    at /home/ec2-user/roi+/collectionDriver.js:22:16
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:172:16
+    at commandHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/cursor.js:720:16)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/db.js:1916:9
+    at Server.Base._callHandler (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/base.js:448:41)
+    at /home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/connection/server.js:481:18
+    at MongoReply.parseBody (/home/ec2-user/roi+/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js:68:5)

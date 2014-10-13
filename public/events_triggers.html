@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Dashboard I Admin Panel</title>
+	
+	<link rel="stylesheet" href="./css/layout.css" type="text/css" media="screen">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="./js/jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="./js/hideshow.js" type="text/javascript"></script>
+	<script src="./js/jquery.tablesorter.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./js/jquery.equalHeight.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() 
+    	{ 
+      	  $(".tablesorter").tablesorter(); 
+   	 } 
+	);
+	$(document).ready(function() {
+
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.tabs li").click(function() {
+
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+
+});
+    </script>
+    <script type="text/javascript">
+    $(function(){
+        $('.column').equalHeight();
+    });
+</script>
+
+</head>
+
+
+<body>
+
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title"><a href="./company_profile.html">Website Admin</a></h1>
+			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="http://www.medialoot.com/">View Site</a></div>
+		</hgroup>
+	</header> <!-- end of header bar -->
+	
+	<section id="secondary_bar">
+		<div class="user">
+			<p>John Doe (<a href="./company_profile.html">3 Messages</a>)</p>
+			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
+		</div>
+		<div class="breadcrumbs_container">
+			<article class="breadcrumbs"><a href="./company_profile.html">Website Admin</a> <div class="breadcrumb_divider"></div> <a class="current">Dashboard</a></article>
+		</div>
+	</section><!-- end of secondary bar -->
+	
+	<aside id="sidebar" class="column" style="height: 1700px;">
+		<form class="quick_search">
+			<input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=&#39;&#39;};this._haschanged=true;">
+		</form>
+		<hr>
+		<h3>Campaign Setup <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_new_article"><a href="./campaigns.html">Campaign Setup</a></li>
+			<li class="icn_edit_article"><a href="./events_triggers.html">Events Triggers</a></li>
+			<li class="icn_categories"><a href="./publishers.html">Publishers</a></li>
+		</ul>
+		<h3>Users <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_profile"><a href="./company_profile.html">Company Profile</a></li>
+		</ul>
+		<h3>Reports And Notifications <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_new_article"><a href="./notifications.html">Notifications</a></li>
+			<li class="icn_edit_article"><a href="./reporting.html">Reports</a></li>
+		</ul>
+		<!--
+		<h3>Admin <a href="#" class="toggleLink"></a></h3>
+		<ul class="toggle">
+			<li class="icn_settings"><a href="./index.html#">Options</a></li>
+			<li class="icn_security"><a href="./index.html#">Security</a></li>
+			<li class="icn_jump_back"><a href="./index.html#">Logout</a></li>
+		</ul> 
+		-->
+		
+		<footer>
+			<hr>
+			<p><strong>Copyright © 2011 Website Admin</strong></p>
+			<p>Theme by <a href="http://www.medialoot.com/">MediaLoot</a></p>
+		</footer>
+	</aside><!-- end of sidebar -->
+	
+	<section id="main" class="column" style="height: 1700px;">
+  
+		<!-- end of stats article -->
+		
+		<article class="module width_full">
+	<header><h3>Quality Settings</h3></header>
+	<div class="module_content">
+  		<lable>Minimum amount of users which is sufficient to assess quality from a sub publishe</lable>						
+  		<input type="text" style="width:5%;">										
+		<div class="clear"></div>
+	</div>
+    <div class="module_content">
+  		<lable>Minimum ROI</lable>						
+  		<input type="text" style="width:5%;">										
+		<div class="clear"></div>
+	</div>
+</article>
+  
+<article class="module width_full">
+			<header><h3>triggers settings</h3></header>
+				<div class="module_content">
+						
+						
+						<fieldset style="width:25%; float:left; margin-right: 3%;"> <!-- to make two field float next to one another, adjust values accordingly -->
+							<label>Event Name</label>
+							<select style="width:92%;">
+								<option>Installation</option>
+								<option>Registration</option>
+								<option>Tutorial</option>
+  								<option>Complete Level 5</option>
+  								<option>purchase</option>
+							</select>
+						</fieldset>
+  <font size="12" style="width:1%; float:left; margin-right: 3%; margin-top:2%">/</font>
+  
+  <fieldset style="width:25%; float:left; margin-right: 3%;"> <!-- to make two field float next to one another, adjust values accordingly -->
+							<label>Event Name</label>
+							<select style="width:92%;">
+								<option>Installation</option>
+								<option>Registration</option>
+								<option>Tutorial</option>
+  								<option>Complete Level 5</option>
+  								<option>purchase</option>
+							</select>
+						</fieldset>
+  <font size="12" style="width:1%; float:left; margin-right: 3%; margin-top:2%">&lt;</font>
+<input type="text" style="width:5%; float:left; margin-top:4%">
+
+<fieldset style="width:20%; float:left; margin-left: 2%;"> <!-- to make two field float next to one another, adjust values accordingly -->
+	<label>time to start</label>
+	<input style="width:80%; margin-left:6%;" type="texr">
+</fieldset>
+
+
+<input type="image" src="./images/plus1.png" title="Edit" style="margin-top:3%; margin-left:2%">
+
+						<div class="clear"></div>
+				</div>
+
+			
+		</article>
+  
+</section>
+
+
+
+
+</body></html>
